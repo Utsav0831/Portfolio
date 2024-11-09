@@ -146,9 +146,9 @@
                 <p class="scroll-animation">
                   My approach to building the tech brands of tomorrow is
                   centered around innovation, efficiency, and user experience. I
-                  leverage modern development frameworks like Laravel to create
-                  scalable, dynamic solutions that solve real-world problems,
-                  ensuring lasting impact and growth for the brands I work with.
+                  leverage modern development frameworks to create scalable,
+                  dynamic solutions that solve real-world problems, ensuring
+                  lasting impact and growth for the brands I work with.
                 </p>
               </div>
             </div>
@@ -255,7 +255,10 @@
                 <div class="skill-bar scroll-animation">
                   <div class="head noselect"><h5>HTML/CSS</h5></div>
                   <div class="bar m-b-2">
-                    <div class="fill" style="width: 20%"></div>
+                    <div
+                      class="fill"
+                      style="width: 100%; transition: width 3s"
+                    ></div>
                     <!-- <div class="number-tag noselect" style="left: 85%">
                       <p class="small">85%</p>
                     </div> -->
@@ -265,7 +268,10 @@
                 <div class="skill-bar m-b-2 scroll-animation">
                   <div class="head noselect"><h5>Javascript</h5></div>
                   <div class="bar">
-                    <div class="fill" style="width: 40%"></div>
+                    <div
+                      class="fill"
+                      style="width: 100%; transition: width 3s"
+                    ></div>
                     <!-- <div class="number-tag noselect" style="left: 70%">
                       <p class="small">70%</p>
                     </div> -->
@@ -275,29 +281,38 @@
                 <div class="skill-bar scroll-animation">
                   <div class="head noselect"><h5>Laravel</h5></div>
                   <div class="bar">
-                    <div class="fill" style="width: 60%"></div>
+                    <div
+                      class="fill"
+                      style="width: 100%; transition: width 3s"
+                    ></div>
                     <!-- <div class="number-tag noselect" style="left: 95%">
                       <p class="small">95%</p>
                     </div> -->
                   </div>
                 </div>
 
-                <div class="seperator-line m-b-4 scroll-animation"></div>
+                <div class="m-b-4 scroll-animation"></div>
                 <div class="skill-bar scroll-animation">
                   <div class="head noselect"><h5>React</h5></div>
                   <div class="bar">
-                    <div class="fill" style="width: 80%"></div>
+                    <div
+                      class="fill"
+                      style="width: 100%; transition: width 3s"
+                    ></div>
                     <!-- <div class="number-tag noselect" style="left: 95%">
                       <p class="small">95%</p>
                     </div> -->
                   </div>
                 </div>
 
-                <div class="seperator-line m-b-4 scroll-animation"></div>
+                <div class="m-b-4 scroll-animation"></div>
                 <div class="skill-bar scroll-animation">
                   <div class="head noselect"><h5>React Native</h5></div>
                   <div class="bar">
-                    <div class="fill" style="width: 100%"></div>
+                    <div
+                      class="fill"
+                      style="width: 100%; transition: width 3s"
+                    ></div>
                     <!-- <div class="number-tag noselect" style="left: 95%">
                       <p class="small">95%</p>
                     </div> -->
@@ -305,6 +320,21 @@
                 </div>
               </div>
             </div>
+
+            <script>
+              const fillDivs = document.querySelectorAll(".fill");
+
+              function updateWidths() {
+                fillDivs.forEach((fillDiv) => {
+                  const randomWidth = Math.floor(Math.random() * 101); // Random number between 0 and 100
+                  fillDiv.style.width = randomWidth + "%";
+                });
+              }
+
+              // Update width of each .fill element every second
+              setInterval(updateWidths, 3000);
+            </script>
+
             <div class="section" style="padding-bottom: 20rem" id="portfolio">
               <div class="container">
                 <p class="tag m-b-3 scroll-animation">PORTFOLIO</p>
