@@ -304,20 +304,6 @@
                 </div>
               </div>
             </div>
-
-            <script>
-              const fillDivs = document.querySelectorAll(".fill");
-
-              function updateWidths() {
-                fillDivs.forEach((fillDiv) => {
-                  const randomWidth = Math.floor(Math.random() * 101);
-                  fillDiv.style.width = randomWidth + "%";
-                });
-              }
-
-              setInterval(updateWidths, 3000);
-            </script>
-
             <div class="section" style="padding-bottom: 20rem" id="portfolio">
               <div class="container">
                 <p class="tag m-b-3 scroll-animation">PORTFOLIO</p>
@@ -461,5 +447,6 @@
       </div>
     </div>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
